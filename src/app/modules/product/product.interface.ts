@@ -3,10 +3,10 @@ export type TProductVariant = {
   name: string;
   price: number;
   stock: number;
-}
+};
 
 export type TProduct = {
   name: string;
   description?: string;
   variants: TProductVariant[];
-}
+};

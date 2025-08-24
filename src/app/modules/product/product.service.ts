@@ -1,12 +1,11 @@
-export type TProductVariant = {
-  sku: string;
-  name: string;
-  price: number;
-  stock: number;
+import { TProduct } from './product.interface';
+import { Product } from './product.model';
+
+const createProductIntoDB = async (payload: TProduct) => {
+  const result = await Product.create(payload);
+  return result;
 };
 
-export type TProduct = {
-  name: string;
-  description?: string;
-  variants: TProductVariant[];
+export const ProductServices = {
+  createProductIntoDB,
 };

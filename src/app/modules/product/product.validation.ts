@@ -2,7 +2,6 @@ import { z } from 'zod';
 
 // Zod schema for product variant
 const productVariantValidationSchema = z.object({
-  body: z.object({
     sku: z.string({ error: 'SKU is required' }).min(1, 'SKU cannot be empty'),
     name: z
       .string({ error: 'Name is required' })
@@ -15,8 +14,7 @@ const productVariantValidationSchema = z.object({
       .nonnegative('Stock cannot be negative')
       .optional()
       .default(0),
-  }),
-});
+  });
 
 // Zod schema for product
 const createProductValidationSchema = z.object({
