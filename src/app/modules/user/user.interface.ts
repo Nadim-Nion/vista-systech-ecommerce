@@ -10,6 +10,11 @@ export type TUser = {
   role: TUserRole;
 };
 
+export type TLoginUser = {
+  email: string;
+  password: string;
+}
+
 export interface UserModelType extends Model<TUser> {
   isUserExistsByCustomId(id: string): Promise<TUser>;
   isPasswordMatched(

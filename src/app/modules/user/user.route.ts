@@ -13,4 +13,8 @@ router.post(
 
 router.get('/', UserControllers.getAllUsers);
 
+router.post('/create-guest-token', UserControllers.generateGuestToken);
+
+router.post('/login-user', UserControllers.loginUser);
+
 export const UserRoutes = router;
