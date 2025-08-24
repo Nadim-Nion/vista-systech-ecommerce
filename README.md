@@ -1,6 +1,6 @@
-# Vista SysTech Ecommerce
+# Vista SysTech E-commerce
 
-**Vista SysTech Ecommerce** is a full-featured e-commerce web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This platform enables users to browse products, manage a shopping cart, place orders, and process payments securely. Admins have dedicated dashboards for managing products, orders, and users.
+**Vista SysTech E-commerce** is a full-featured e-commerce backend web application built using the Express.js, Node.js, MongoDB with Mongoose and TypeScript. This platform enables users to browse products, manage a shopping cart, place orders, and process payments securely.
 
 ---
 
